@@ -1,0 +1,35 @@
+<div class="text-center">
+	<!-- Button HTML (to Trigger Modal) -->
+	<a href="#myModal" class="trigger-btn" data-toggle="modal">Click to Open Login Modal</a>
+</div>
+
+<!-- Modal HTML -->
+<div id="myModal" close-login class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="avatar">
+					<!-- <img src="/examples/images/avatar.png" alt="Avatar"> -->
+				</div>				
+				<h4 class="modal-title">Member Login</h4>	
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form method="post">
+					<div class="form-group">
+						<input type="text" class="form-control" name="username" placeholder="Username" ng-model="username" required="required">		
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" name="password" placeholder="Password" ng-model="password" required="required">	
+					</div>        
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn" ng-click="loginFunction()">Login</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>
+		</div>
+	</div>
+</div>
